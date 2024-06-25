@@ -1,0 +1,155 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    /* Light blue background */
+  }
+  
+  .contact-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100vh;
+    padding: 2rem;
+  }
+  
+ .right-section {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the start, moving content more to the left */
+    padding: 0 4rem 0 1rem; /* Adjusted padding for alignment */
+  }
+  
+  .h1 {
+    color: #000; /* Black color for the heading */
+    margin-bottom: 1rem;
+    text-align: center;
+    
+  }
+  
+  p {
+    line-height: 1.6;
+    color: #333; /* Dark grey text for paragraphs */
+  }
+  
+  button#emailButton {
+    background-color: #007bff; /* Blue background for the button */
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 1rem;
+    cursor: pointer;
+    display: block; /* Make the button a block to fill the width */
+    width: fit-content; /* Make button width as per content */
+    margin-top: 1rem; /* Margin on top of the button */
+  }
+  
+  .map-container, form#contactForm {
+    width: 80%; /* Adjust width as needed */
+    max-width: 500px; /* Maximum width limit */
+    margin-bottom: 1rem;
+  }
+  
+  .map-container iframe {
+    width: 100%; /* iframe takes the full width of the .map-container */
+    height: 250px; /* Adjust height as needed */
+    border: 2px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  form#contactForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form#contactForm input,
+  form#contactForm textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  form#contactForm button {
+    padding: 0.8rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .left-section, .right-section {
+      flex-basis: auto;
+      padding: 1rem 0;
+      align-items: center;
+    }
+  
+    .map-container, form#contactForm {
+      width: 90%; /* Increase width on smaller screens for better visibility */
+    }
+  }
+  
+  .left-section {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+    justify-content: center; /* Center the items vertically */
+    text-align: left; /* Center the text */
+    padding: 0 10rem 0 12rem; /* Increase left padding to move content to the right */
+    background: #e6f7ff; /* Light blue background */
+    font-weight: bold; /* Makes the text bold */
+    margin-top: 1rem; /* Adds space above the heading */
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  /* ... other styles remain the same ... */
+  
+  .left-section p {
+    padding-left: 0px; /* Adds padding to the left of paragraphs */
+    text-align: left center; /* Optional: Justifies the text for a cleaner look */
+  }
+  
+  .left-section h2, .left-section h1 {
+    padding-left: 0px;
+    text-align: center; /* Keeps headings centered */
+  }
+  
+
+
+
+  .right-section .map-container, .right-section form#contactForm {
+    margin-left: 100px; /* Moves the map and form to the right */
+  }
+  
+  /* Optionally, adjust the overall alignment of the right section if needed */
+  .right-section {
+    align-items: flex-start; /* Keeps content aligned to the start */
+  }
+  
+
+  @media (max-width: 768px) {
+    .left-section, .right-section {
+      padding: 1rem 0;
+    }
+    
+    /* Example: Explicitly remove padding for child elements if necessary */
+ .right-section .map-container, .right-section form#contactForm {
+      padding: 0; /* Adjust as needed */
+      margin-left: 0; /* Ensuring elements align properly on mobile */
+    }
+  }
+  

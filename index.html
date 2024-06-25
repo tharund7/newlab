@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Responsive Navbar with Sections</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/" class="logo">
+                <img src="https://webstatic.kennesaw.edu/_resources/images/template/ksu_horizontal.svg" alt="GSU Logo" style="height: 50px;">
+            </a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="nav__link hide">
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <div class="dropdown">
+                    <a>People</a>
+                    <div class="dropdown-content">
+                        <a href="currentmembers.html">Current Members</a>
+                        <a href="alumni.html">Alumni</a>
+                    </div>
+                </div>
+                <a href="publications.html">Publications</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Sections 1 Start Here -->
+    <section id="profile" class="section">
+        <div class="section__pic-container fadeInAnimation">
+            <img src="./assets/image.png" alt="Tharun Derangula profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Katherine H. Ingram, Ph.D.</h1>
+            <p class="section__text__p2">Associate Professor of Exercise Science,<br> Kennesaw State University, Atlanta, GA.</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin1.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/tharunderangula/'" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections 2  Start Here -->
+    <section class="about-section">
+        <div class="about-container">
+            <h1 class="about-heading">About</h1>
+            <div class="about-divider">|</div>
+            <div class="about-content">
+                <p>Director of NIH-funded biomedical research team focused on obesity, cardiometabolic health, and lifestyle factors (physical activity, diet, social factors), with a special interest in predictors of diabetes. Professor of exercise physiology, nutrition, fitness assessment protocols and design. Expert in wellness programming and weight-management counseling. Award-winning research mentor and supervisor. Partner in biosensor development program focusing on incorporating continuous glucose monitoring into wearable technology.</p>
+            </div>
+        </div>
+    </section>
+    
+
+        <!-- Sections 3  Start Here -->
+        <section class="education-section">
+            <h1 class="education-heading">EDUCATION</h1>
+            <div class="education-container">
+                <div class="education-column">
+                    <p>B.S.</p>
+                    <p>M.S.</p>
+                    <p>Ph.D.</p>
+                    <p>Postdoctoral</p>
+                    <p>Postdoctoral</p>
+                </div>
+                <div class="education-column">
+                    <p>Sport Management, 1993</p>
+                    <p>Exercise Physiology, 1998</p>
+                    <p>Exercise Phys/Nutrition minor, 2009</p>
+                    <p>Obesity Research, 2009-2011</p>
+                    <p>Diabetes Research, 2011-2012</p>
+                </div>
+                <div class="education-column">
+                    <p>Tulane University, New Orleans</p>
+                    <p>University of Nevada, Las Vegas</p>
+                    <p>Georgia State University</p>
+                    <p>NIH NIDDK T32 Fellowship, UAB</p>
+                    <p>Nutrition Sciences, UAB</p>
+                </div>
+            </div>
+        </section>
+            
+
+
+    <!-- Sections 4  Start Here -->
+    <div class="academic-appointments-container">
+        <div class="academic-appointments">
+            <div class="left">
+                <h1>ACADEMIC APPOINTMENTS</h1>
+            </div>
+            <div class="center">
+                <p>Associate Professor of Exercise Science</p>
+            </div>
+            <div class="right">
+                <p>Kennesaw State University, 2019-present<br>
+                WellStar College of Health and Human Services<br>
+                Department of Exercise Science and Sport Management</p>
+            </div>
+        </div>
+        <div class="academic-appointments">
+            <div class="left">
+                <p>&nbsp;</p> <!-- Placeholder to keep the height consistent -->
+            </div>
+            <div class="center">
+                <p>Assistant Professor of Exercise Science</p>
+            </div>
+            <div class="right">
+                <p>Kennesaw State University, 2012-2019<br>
+                WellStar College of Health and Human Services<br>
+                Department of Exercise Science and Sport Management</p>
+            </div>
+        </div>
+        <div class="academic-appointments">
+            <div class="left">
+                <p>&nbsp;</p> <!-- Placeholder to keep the height consistent -->
+            </div>
+            <div class="center">
+                <p>Adjunct Instructor</p>
+            </div>
+            <div class="right">
+                <p>Samford University, Birmingham, Alabama, 2008-2009<br>
+                Department of Kinesiology</p>
+            </div>
+        </div>
+        <div class="academic-appointments">
+            <div class="left">
+                <p>&nbsp;</p> <!-- Placeholder to keep the height consistent -->
+            </div>
+            <div class="center">
+                <p>Graduate Teaching/Research Assistant</p>
+            </div>
+            <div class="right">
+                <p>Georgia State University, 2004-2006<br>
+                Department of Kinesiology and Health<br>
+                Human Performance Laboratory</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Sections 5  Start Here -->
+    <div class="scholastic-awards-container">
+        <div class="scholastic-awards">
+            <div class="left">
+                <img src="./assets/medal.png" alt="Star Image" class="star-image">
+                <h1>SCHOLASTIC AWARDS/ RECOGNITION</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>KSU Career Services “Person who made the greatest difference in the life of a student”, 2015-2019</li>
+                    <li>KSU Office of the Vice President of Research, Summer Research Scholars, 2019</li>
+                    <li>WellStar College Research Fellowship Awards, Spring 2015, Spring 2016, Fall 2016, Fall 2017</li>
+                    <li>KSU Incentive Funding Award for Scholarship & Creative Activity Award, CETL, FY 2016</li>
+                    <li>KSU Foundation Publication Prize for WellStar College of Health and Human Service, August 2014</li>
+                    <li>UAB Postdoctoral Research Day, 2nd Place award, February 2011</li>
+                    <li>UAB Office of Postdoctoral Education Career Development Award, January 2011</li>
+                    <li>Global Obesity Summit “Hot Topics” and Travel Award, November 2010</li>
+                    <li>National Scholars Honor Society, 2008 - 2009</li>
+                    <li>Golden Key International Honour Society, 2007-2009</li>
+                    <li>Student Research Award, Gatorade Sport Science Institute, 2007</li>
+                    <li>Excellent Achievement Award, Federal Occupational Health, 2001</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Sections End Here -->
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,490 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: white;
+  padding-right: 100px;
+  text-decoration: none;
+  color: black;
+}
+
+.logo::after {
+  content: none; /* Remove underline effect for the logo */
+}
+
+/* nav styles */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: white;
+  color: black;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.nav__link {
+  position: fixed;
+  width: 94%;
+  top: 5rem;
+  left: 18px;
+  background-color: lightblue;
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav__link a:hover {
+  background-color: transparent; /* Remove gray background on hover */
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+.nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  background-color: lightblue;
+}
+
+.nav__link a {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 600px) {
+  .nav__link {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+}
+
+/* Existing styles */
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #008DDA;
+  min-width: 160px;
+  width: 200px;
+  max-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Adjusted Section Styling */
+.section {
+  padding: 200px;
+  margin: 0;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+/* Individual Section Background Colors for Distinction */
+#section1 {
+  background-color: #e6f7ff;
+}
+#section2 {
+  background-color: #e6f7ff;
+}
+#section3 {
+  background-color: #e6f7ff;
+}
+#section4 {
+  background-color: #e6f7ff;
+}
+#section5 {
+  background-color: #008DDA;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 83vh;
+  margin: 0;
+  margin-top: 0px; /* Adjust the margin-top value as needed */
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+  color: #fff;
+}
+
+.section__text__p1 {
+  text-align: center;
+  animation: fadeIn 2s ease-out 0s;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  animation: fadeIn 2s ease-out 2s;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  animation: fadeIn 2s ease-out 1s;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* FadeIn Animation */
+.fadeInAnimation {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+/* Section 2 */
+.about-section {
+  padding: 40px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-heading {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-left: 150px;
+  margin-right: 5px;
+}
+
+.about-divider {
+  font-size: 5.5em;
+  color: #555;
+  margin: 0 20px;
+}
+
+.about-content {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  flex: 1;
+}
+
+
+/* Section 3 education */
+
+.education-section {
+  padding: 20px;
+  padding-bottom: 80px;
+  background-color:rgb(232,232,237);
+  text-align: center; /* Center the heading */
+  margin: 0px 150px; /* Add space above and below the section */
+}
+
+.education-heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 50px 0; /* Add space above and below the heading */
+}
+
+.education-container {
+  display: flex;
+  justify-content: center; /* Center the columns container */
+  align-items: flex-center;
+  text-align: center; /* Align the text in the columns to the left */
+  gap: 0px; /* Space between columns */
+}
+
+.education-column {
+  flex: 1;
+  padding: 0 5px; /* Reduce the padding between columns */
+}
+
+.education-column p {
+  margin: 5px 0;
+}
+
+
+/* Section 4 experience */
+.academic-appointments-container {
+  background-color: white;
+  padding-top: 500px;
+  padding: 150px;
+}
+
+.academic-appointments {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Add margin between sections */
+}
+
+.academic-appointments .left {
+  flex: 1;
+  text-align: left;
+}
+
+.academic-appointments .center {
+  flex: 1;
+  text-align: left;
+}
+
+.academic-appointments .right {
+  flex: 1;
+  text-align: left;
+}
+
+.academic-appointments h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.academic-appointments p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+
+
+/* Section 5 contact */
+.scholastic-awards-container {
+  background-color: rgb(232,232,237);
+  padding: 20px;
+  padding-left: 500px;
+}
+
+.scholastic-awards {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 100px; /* Add space above the section */
+  margin-bottom: 300px; /* Add margin between sections */
+}
+
+.scholastic-awards .left {
+  flex: 0 0 150px; /* Adjust width as needed */
+  text-align: left;
+  margin-right: 200px;
+}
+
+.scholastic-awards .left img {
+  width: 160px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.scholastic-awards .right {
+  flex: 1;
+  text-align: left;
+}
+
+.scholastic-awards h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.scholastic-awards ul {
+  list-style-type: disc; /* Bullet points */
+  padding-left: 20px; /* Adjust padding as needed */
+}
+
+.scholastic-awards li {
+  margin-bottom: 5px; /* Add margin between list items */
+  line-height: 1.5;
+}
+
+
